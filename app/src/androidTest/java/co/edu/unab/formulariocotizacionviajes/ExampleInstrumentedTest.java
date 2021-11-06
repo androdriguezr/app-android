@@ -1,4 +1,4 @@
-package co.edu.unab.newformturismo;
+package co.edu.unab.formulariocotizacionviajes;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("co.edu.unab.newformturismo", appContext.getPackageName());
+        assertEquals("co.edu.unab.formulariocotizacionviajes", appContext.getPackageName());
     }
 }

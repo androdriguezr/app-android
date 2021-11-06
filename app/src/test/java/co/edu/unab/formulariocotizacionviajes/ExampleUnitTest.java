@@ -1,4 +1,4 @@
-package co.edu.unab.newformturismo;
+package co.edu.unab.formulariocotizacionviajes;
 
 import org.junit.Test;
 

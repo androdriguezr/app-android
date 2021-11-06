@@ -6,7 +6,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "co.edu.unab.newformturismo"
+        applicationId "co.edu.unab.formulariocotizacionviajes"
         minSdk 23
         targetSdk 31
         versionCode 1

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="7dp"
+
     android:orientation="vertical"
     android:padding="1dp">
 
@@ -16,20 +18,466 @@
         android:orientation="horizontal">
 
 
+
+        <ImageView
+            android:id="@+id/imageViewPlaya"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:gravity="left"
+            android:layout_weight="1.5"
+            tools:srcCompat="@drawable/playa" />
         <Space
             android:layout_width="56dp"
             android:layout_height="140dp"/>
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
-
+            android:id="@+id/imageViewNevado"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:gravity="left"
+            android:layout_weight="1.5"
+            tools:srcCompat="@drawable/nevado" />
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:background="@color/material_on_primary_disabled"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center"
+                    android:text="Datos de la persona que reserva"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Nombre"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:alpha="2"
+                    android:focusable="auto"
+                    android:hint="Relacione Nombres"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Apellido"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:hint="Relacione Apellidos"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Celular"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextCelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autoLink="phone"
+                    android:hint="(+571) 317-666-0989"
+                    android:inputType="text|phone"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Cédula"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextCedula"
+                    style="@android:style/Widget.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:hint="1030653882"
+                    android:inputType="numberSigned"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textViewdireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Direccion"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:hint="Calle 4 #34-4 sur"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textViewCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Correo Electrónico"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:autoLink="email"
+                    android:hint="correo@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center"
+                    android:text="Datos de la reserva"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Seleccione el destino"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerDestino"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:focusable="auto"
+
+                    android:popupBackground="@color/black"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textViewNoches"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Fecha de check-in"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextNumNoches"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:inputType="date"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/textViewCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Fecha de check-out"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextcheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:inputType="date"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textViewPersonasNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Número de personas hospedadas"
+                    android:textSize="15dp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextNumPersonas"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:hint="5"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cotizar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/textCotizacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="#E8DEDE"
+                    android:gravity="center"
+                    android:hint="Valor total de cotizacion"
+
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="15dp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 
 </LinearLayout>
