@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="opcionesPaises">
-        <item> Cartagena </item>
+        <item> Cartagena</item>
         <item> Santa Marta</item>
-        <item> San Andres </item>
+        <item> San Andrés</item>
         <item> Amazonas</item>
         <item> Meta</item>
 
-        </string-array>
-
+    </string-array>
 </resources>

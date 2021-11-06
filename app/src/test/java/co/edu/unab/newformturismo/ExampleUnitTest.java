@@ -1,4 +1,4 @@
-package co.edu.unab.formcotizar;
+package co.edu.unab.newformturismo;
 
 import org.junit.Test;
 
